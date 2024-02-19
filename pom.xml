@@ -6,7 +6,7 @@
 
 	<groupId>fc9e3283-a489-4e88-99aa-cceea4aa5ea1</groupId>
 	<artifactId>rtf-maven-test</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<packaging>mule-application</packaging>
 
 	<name>rtf-maven-test</name>
@@ -80,7 +80,7 @@
 							</resources>
 							<http>
 								<inbound>
-									<publicUrl>ec2-3-122-204-208.eu-central-1.compute.amazonaws.com/rtf/rtf-maven-test</publicUrl>
+									<publicUrl>${env.public_url}</publicUrl>
 								</inbound>
 							</http>
 						</deploymentSettings>

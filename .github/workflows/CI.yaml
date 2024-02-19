@@ -80,6 +80,7 @@ jobs:
 #        cores: ${{ vars.CORES }}
         api_layer: ${{ vars.API_LAYER }}
         app_env: ${{ vars.APP_ENV }}
+        public_url: ${{vars.PUBLIC_URL}}
       run: |
         artifactName=$(ls *.jar | head -1)
         mvn clean -B deploy -DmuleDeploy -Dmule.artifact=$artifactName \
